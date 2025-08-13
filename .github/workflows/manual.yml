@@ -1,3 +1,4 @@
+
 name: Manual
 on:
   workflow_dispatch:
@@ -10,4 +11,5 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-    steps: echo "${{inputs.greeting}}"
+    steps:
+      - run: echo "${{ github.event.inputs.greeting }}"

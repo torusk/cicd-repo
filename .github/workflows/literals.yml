@@ -6,8 +6,8 @@ jobs:
     steps:
       - run: printenv | grep 'LITERAL_'
         env:
-          LTERAL_NULL: ${{null}}
-          LTERAL_BOOLEAN: ${{true}}
-          LTERAL_NUMBER: ${{1234}}
-          LTERAL_STRING: ${{'Hello'}}
-          LTERAL_OMIT_STRING: World
+          LITERAL_NULL: ${{null}}
+          LITERAL_BOOLEAN: ${{true}}
+          LITERAL_NUMBER: ${{1234}}
+          LITERAL_STRING: ${{'Hello'}}
+          LITERAL_OMIT_STRING: World

@@ -1,0 +1,12 @@
+name: Override Environment Variables
+on: push
+env:
+  EXAMPLE: Definde by workflow level
+jobs:
+  print:
+    runs-on: ubntu-latest
+    steps:
+      - run: echo "${{ EXAMPLE }}"
+      - env:
+          EXAMPLE: Defined by job level
+        run: echo "${{ EXAMPLE }}"
